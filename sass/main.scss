@@ -4,3 +4,8 @@
 @import "_header.scss";
 @import "_content.scss";
 @import "_footer.scss";
+
+a:hover {
+	text-decoration: none;
+	color: #F57CFF;
+}

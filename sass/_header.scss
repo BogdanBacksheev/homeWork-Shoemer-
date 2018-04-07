@@ -1,3 +1,165 @@
-.menu__Item {
+.header {
+	font-size: 16px;
+	position: relative;
+}
+
+.header__top {
+	display: none;
+}
+
+.header__bottom {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #2D1C46;
+}
+
+.flexContainerBottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexContainerBottom a {
+	display: none;
+}
+
+.header__bottomInner {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.logo {
+	width: 278px;
+	height: 40px;
+	background: url(../images/logo.png);
+}
+
+.header__mobMenu {
+	width: 10%;
+}
+
+.toggleMobMenu {
+	width: 30px;
+	padding-top: 15px;
+	cursor: pointer;
+}
+
+.toggleMobMenu span {
+	display: block;
+	height: 2px;
+	margin-bottom: 6px;
+	background-color: #fff;
+}
+
+.toggleMobMenu:last-child {
+	margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 480px) {
+
+
+.header__mobMenuInner {
+	display: none;
+	height: 100px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	font-size: 20px;
+	background-color: rgba(0,0,0,.8);
+	z-index: 2;
+}
+
+.header__mobMenuInner.open {
+	display: block;
+	color: #fff;
+	text-align: center;
+	height: auto;
+}
+
+
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+.header__bottomInner {
+	width: 60%;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+
+.header__top {
+	display: initial;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.flexContainerTop {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__topInner {
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.flexContainerBottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+
+.flexContainerBottom a {
+	display: initial;
+}
+
+
+.header__bottomInner a {
+	color: #fff;
+}
+
+.basket a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.basket:after {
 	display: inline-block;
+	content: '';
+	width: 37px;
+	height: 26px;
+	margin-left: 2px;
+	vertical-align: middle;
+	background: url(../images/basket.png);
+}
+
+button {
+	width: 21px;
+	height: 20px;
+	background: url(../images/search.png);
+}
+
+.header__mobMenu {
+	display: none;
+}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+
 }
